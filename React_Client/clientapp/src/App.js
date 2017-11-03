@@ -27,9 +27,15 @@ class About extends Component {
     );
   }
 }
+class SelectTopic extends Component {
+  render() {
+    return (
+      <h3>Please select a topic.</h3>
+    );
+  }
+}
 class Topics extends Component {
   constructor({match}){
-    console.log(match);
     super();
     this.match=match;
   }
@@ -56,9 +62,7 @@ class Topics extends Component {
           </ul>
 
           <Route path={`${this.match.url}/:topicId`} component={Topic}/>
-          <Route exact path={this.match.url} render={() => (
-            <h3>Please select a topic.</h3>
-          )}/>
+          <Route exact path={this.match.url} component={SelectTopic}/>
     </div>
     );
   }
