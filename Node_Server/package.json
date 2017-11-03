@@ -1,0 +1,26 @@
+{
+  "name": "appserver",
+  "version": "1.0.0",
+  "description": "App Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantuonweb/react_with_routing.git"
+  },
+  "keywords": [
+    "node",
+    "reactjs"
+  ],
+  "author": "Mantu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mantuonweb/react_with_routing/issues"
+  },
+  "homepage": "https://github.com/mantuonweb/react_with_routing#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
