@@ -1,21 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
-class SelectTopic extends Component {
-  render() {
-    return (
-      <h3>Please select a topic.</h3>
-    );
-  }
-}
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-)
+import SelectTopic from './../components/SelectTopic.js';
+import Topic from './../components/Topic.js';
+// import Home from './../components/Home.js';
 function TopicsRender(){
 	 return (
         <div>
