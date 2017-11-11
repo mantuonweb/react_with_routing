@@ -13,12 +13,12 @@ class LoginComponent extends Component {
    }
 
    onPasswordHandle(password){
-     console.log(password,this.refs);
-     this.setState({ password: password,})
+     this.password = password;
+     this.setState({ password: password})
    }
    onUserNameHandle(username) {
      this.username=username;
-     this.setState({ username: username, })
+     this.setState({ username: username})
      console.log(username,this.refs);
    }
 }

@@ -10,20 +10,11 @@ function LoginRender(){
              </div>
              <div className={`form-group ${this.state.password ? '' : 'has-error'}`}>
                  <label htmlFor="pwd">Password:</label>
-                 <Password ref="passWord"  name="password" className="form-control" onChange={this.onPasswordHandle.bind(this)}>hello</Password>
+                 <Password ref="passWord" name="password" className="form-control" onChange={this.onPasswordHandle.bind(this)}>hello</Password>
              </div>
-             <div className="checkbox">
-                 <label><input type="checkbox" name="remember" /> Remember me</label>
-             </div>
-             {/*<input type="button" onClick={() => this.refs.userName.isValid()} value="Click"></input>*/}
-             <button type="submit" className="btn btn-default">Submit</button>
-             <div>
-                 {this.username}
-             </div>
+             <button type="button" className="btn btn-default">Submit</button>
          </Form>
          
     );
 }
-
-
 export default LoginRender;
