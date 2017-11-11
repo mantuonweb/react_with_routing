@@ -75,10 +75,20 @@ export class Password extends Component {
 
 
 export class Form extends Component {
+    constructor(props){
+        super(props);
+        //console.log(props);
+        this.submitHandler = props.onSubmit;
+    }
+    handleLoginSubmit(e){
+        e.preventDefault();
+        this.submitHandler(e);
+    }
     render() {
         return (
-            <form className="form-horiziontal" >
-                {this.props.children}
+            <form className="form-horiziontal" onSubmit={this.handleLoginSubmit.bind(this)}>
+                {this.props.children}  
+                
             </form>
         );
     }
