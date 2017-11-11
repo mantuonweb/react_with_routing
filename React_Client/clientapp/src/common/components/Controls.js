@@ -72,6 +72,7 @@ export class Password extends Component {
 
 export class Form extends Component {
     render() {
+        
         return (
             <form className="form-horiziontal">
                 {this.props.children}
