@@ -5,6 +5,9 @@ import { Component } from 'react';
 //
 // import logo from './logo.svg';
 import AppRender from './jsx/app.jsx'
+// import 'jquery/dist/jquery.js';
+// import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 class App extends Component {
