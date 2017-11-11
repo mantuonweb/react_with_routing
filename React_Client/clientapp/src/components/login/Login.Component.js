@@ -19,10 +19,9 @@ class LoginComponent extends Component {
    onUserNameHandle(username) {
      this.username=username;
      this.setState({ username: username})
-     console.log(username,this.refs);
    }
    onFormSubmit(e){
-     console.log(e,'login component',this.username);
+     console.log(e,'login component',this.username,this.state);
    }
 }
 export default LoginComponent;
