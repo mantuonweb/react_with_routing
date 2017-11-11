@@ -8,6 +8,8 @@ export class Input extends Component {
             content:props.content
         };
         this.changeHandler=props.onChange;
+        this.isValid=this.isValid.bind(this);
+
         //console.log(this.state);
     }
     componentWillReceiveProps(newprops) {
@@ -31,7 +33,8 @@ export class Input extends Component {
     }
 
     isValid(){
-
+        console.log("hi")
+        return "hel"
     }
 }
 export class Password extends Component {
@@ -42,6 +45,7 @@ export class Password extends Component {
             content: props.content
         };
         this.changeHandler = props.onChange;
+        this.isValid = this.isValid.bind(this);
         //console.log(this.state);
     }
     componentWillReceiveProps(newprops) {
@@ -72,9 +76,8 @@ export class Password extends Component {
 
 export class Form extends Component {
     render() {
-        
         return (
-            <form className="form-horiziontal">
+            <form className="form-horiziontal" >
                 {this.props.children}
             </form>
         );
