@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/mantuonweb/react_with_routing#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.3.0",
+    "ml-regression": "^4.4.2",
+    "util": "^0.10.3"
   }
 }
