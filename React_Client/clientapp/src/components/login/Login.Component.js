@@ -26,7 +26,7 @@ class LoginComponent extends Component {
     if(this.username === "test" && this.password === "test" ){
         this.props.history.push('/main');
     }
-     
+    
      // $.ajax({
      //  url:'http://localhost:5000/login',
      //  method:'post',

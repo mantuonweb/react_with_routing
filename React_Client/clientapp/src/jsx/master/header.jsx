@@ -5,7 +5,7 @@ function HeaderRender(){
 		        <div className="container-fluid">
 		          <div className="navbar-header">
 		            <a className="navbar-brand" href="#">
-		              <img alt="Brand" src="..." />
+		             Title
 		            </a>
 		          </div>
 		        </div>

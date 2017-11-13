@@ -6,7 +6,7 @@ function LoginRender(){
          <div className="wrapper">
                 <div className="form-signin">
                  <Form onSubmit={this.onFormSubmit.bind(this)}>
-                     <h2 class="form-signin-heading">Please login</h2>
+                     <h2 className="form-signin-heading">Please login</h2>
                      <div className={`form-group ${this.state.username?'':'has-error'}`}>
                          <label htmlFor="email" >Email:</label>
                          <Input ref="userName" name="username" className="form-control" required="true" content={this.username} onChange={this.onUserNameHandle.bind(this)}></Input>
