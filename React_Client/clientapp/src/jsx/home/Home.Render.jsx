@@ -1,14 +1,5 @@
 import React from 'react';
-function RenderTable(props){
-    let rows=[];
-    if(props && props.users.length){
-        for (var i = 0; i < props.users.length; i++) {
-            rows.push(<RenderRow user={props.users[i]}></RenderRow>)
-        }
-    }
-    
-    return rows;
-}
+
 function RenderRow(props){
     return (<tr>
                 <td>{props.user.name}</td>
@@ -37,5 +28,10 @@ function HomeRender(){
          
          </div>
     );
+}
+function RenderTable(props){
+    return props.users.map((user,i)=>{
+        return (<RenderRow key={i} user={user}></RenderRow>);
+    });
 }
 export default HomeRender;
